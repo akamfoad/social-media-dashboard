@@ -1,0 +1,61 @@
+.SocialCards {
+  position: absolute;
+  width: 100%;
+  padding: 0 10rem;
+  top: -100px;
+  left: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.7rem;
+}
+
+@media (max-width: 999px) {
+  .SocialCards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 799px) {
+  .SocialCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 684px) {
+  .SocialCards {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+@media (max-width: 589px) {
+  .SocialCards {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 478px) {
+  .SocialCards {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .SocialCards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 382px) {
+  .SocialCards {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

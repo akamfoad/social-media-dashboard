@@ -1,0 +1,45 @@
+.OverviewCards {
+  margin-top: 3rem;
+}
+
+.OverviewCards h1 {
+  color: var(--Dark-Grayish-Blue);
+}
+.OverviewCards h1.Dark {
+  color: var(--White);
+}
+.Cards {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.7rem;
+}
+
+@media (max-width: 1099px) {
+  .Cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 999px) {
+  .OverviewCards {
+    margin-top: 16.5rem;
+  }
+}
+@media (max-width: 889px) {
+  .Cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 524px) {
+  .Cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 414px) {
+  .OverviewCards {
+    margin-top: 44.5rem;
+  }
+}

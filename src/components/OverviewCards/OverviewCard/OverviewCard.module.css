@@ -1,0 +1,46 @@
+.OverviewCard {
+  background-color: var(--Light-Grayish-Blue);
+  padding: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.OverviewCard:hover {
+  background-color: hsl(229, 44%, 90%);
+}
+
+.OverviewCard.Dark {
+  background-color: var(--Dark-Desaturated-Blue);
+}
+.OverviewCard.Dark:hover {
+  background-color: hsl(228, 19%, 25%);
+}
+.UPPER {
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.OverviewCard.Dark > .UPPER > h5 {
+  color: var(--Desaturated-Blue);
+}
+
+.UPPER,
+.LOWER {
+  display: flex;
+  justify-content: space-between;
+}
+
+.OverviewCard.Dark > .LOWER > h2 {
+  color: var(--White);
+}
+
+.STAT {
+  display: flex;
+  align-items: center;
+}
+
+.STAT small {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 3px;
+}

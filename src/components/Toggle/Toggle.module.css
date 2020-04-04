@@ -1,0 +1,74 @@
+.Switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+}
+
+.Label {
+  margin-right: 15px;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.Label.Dark {
+  color: var(--Desaturated-Blue);
+}
+.Switch:hover > .Label.Dark {
+  color: var(--White);
+}
+
+.Toggle {
+  position: relative;
+  width: 46px;
+  height: 22px;
+  display: block;
+  background-color: transparent;
+}
+
+.Toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.Slider {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--Light-Toggle);
+  transition: all 0.4 ease-in-out;
+}
+
+.Slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  right: 0;
+  margin: 3px 3px;
+  background-color: var(--Light-Grayish-Blue);
+  border-radius: 50%;
+  transition: 0.4s ease-in-out;
+}
+
+input:hover + .Slider,
+input:checked + .Slider {
+  background: var(--Dark-Toggle);
+}
+
+input:checked + .Slider:before {
+  transform: translateX(-24px);
+  background-color: var(--Dark-Desaturated-Blue);
+}
+
+@media (max-width: 779px) {
+  .Switch {
+    width: 100%;
+  }
+}

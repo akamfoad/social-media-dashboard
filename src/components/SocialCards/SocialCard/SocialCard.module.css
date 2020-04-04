@@ -1,0 +1,85 @@
+.SocialCard {
+  cursor: pointer;
+  background-color: var(--Light-Grayish-Blue);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
+.SocialCard:hover {
+  background-color: hsl(229, 44%, 90%);
+}
+.SocialCard.Dark {
+  background-color: var(--Dark-Desaturated-Blue);
+}
+
+.SocialCard.Dark:hover {
+  background-color: hsl(227, 27%, 26%);
+}
+
+.FACEBOOK,
+.INSTAGRAM,
+.YOUTUBE,
+.TWITTER {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.FACEBOOK {
+  border-top: 4px solid var(--Facebook);
+}
+.INSTAGRAM {
+  padding-top: 4px;
+  background-image: var(--Instagram);
+}
+.TWITTER {
+  border-top: 4px solid var(--Twitter);
+}
+.YOUTUBE {
+  border-top: 4px solid var(--YouTube);
+}
+.Header {
+  display: flex;
+  align-items: center;
+}
+.Header h6 {
+  color: var(--Dark-Grayish-Blue);
+  margin-left: 10px;
+}
+.Header h6 {
+  color: var(--Desaturated-Blue);
+}
+.STAT {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.CURRENT {
+  margin: 1rem 0;
+}
+.CURRENT h1 {
+  font-size: 3.3rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.CURRENT p {
+  color: var(--Dark-Grayish-Blue);
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.CURRENT.Dark h1 {
+  color: var(--White);
+}
+
+.STAT small {
+  margin-left: 3px;
+}

@@ -21,12 +21,12 @@ export default {
       username: "realnathanf",
       type: "followers",
       status: "INC",
-      number: 99,
-      current: 11_000
+      number: 1099,
+      current: "11k"
     },
     {
       platform: "youtube",
-      username: "realnathanf",
+      username: "Nathan F.",
       type: "subscribers",
       status: "DEC",
       number: 144,
@@ -60,7 +60,7 @@ export default {
       type: "profile views",
       status: "INC",
       number: 1375,
-      current: 52_000
+      current: "52k"
     },
     {
       platform: "twitter",
