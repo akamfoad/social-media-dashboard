@@ -12,7 +12,11 @@ const toggle = props => {
         Dark Mode
       </div>
       <label className={classes.Toggle}>
-        <input type="checkbox" onChange={props.toggleDarkMode} />
+        <input
+          type="checkbox"
+          checked={props.isDark}
+          onChange={props.toggleDarkMode}
+        />
         <span className={classes.Slider}></span>
       </label>
     </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "./components/Layout/Layout";
 import SocialCards from "./components/SocialCards/SocialCards";
 import Data from "./data";
@@ -13,8 +13,14 @@ function App() {
       document.body.style.backgroundColor = "#fff";
     }
   }, [isDark]);
+
+  useEffect(() => {
+    const isDarkTheme = localStorage.getItem("IsDarkTheme");
+    setIsDark(!isDarkTheme || isDarkTheme === "false" ? false : true);
+  }, []);
   const toggleDarkMode = () => {
     setIsDark(!isDark);
+    localStorage.setItem("IsDarkTheme", !isDark);
   };
 
   return (
